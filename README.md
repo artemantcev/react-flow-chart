@@ -1,4 +1,4 @@
-# Changes from MrBlenny's version in this fork
+# Differences between MrBlenny version and the fork
 - Each Port knows about the parent Node it belongs to, and can use the data from there
 - added isFreeDraggingRestricted boolean option to Canvas to disable the default drag'n'drop behaviour for new nodes
 
