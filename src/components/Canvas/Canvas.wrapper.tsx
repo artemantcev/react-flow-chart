@@ -134,10 +134,6 @@ export class CanvasWrapper extends React.Component<ICanvasWrapperProps, IState> 
                   }
                 }}
                 onDrop={(e) => {
-                  if (config.isFreeDraggingRestricted) {
-                    return
-                  }
-
                   const data = JSON.parse(
                     e.dataTransfer.getData(REACT_FLOW_CHART),
                   )

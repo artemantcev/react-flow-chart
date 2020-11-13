@@ -271,6 +271,11 @@ export const onCanvasDrop: IStateCallback<IOnCanvasDrop> = ({
   position,
   id,
 }) => (chart: IChart): IChart => {
+  if (config && config.isFreeDraggingRestricted) {
+    // in this case you have to define your own dropping logic, e.g. in the custom Port's onDrop callback
+    return chart
+  }
+
   chart.nodes[id] = {
     id,
     position:
