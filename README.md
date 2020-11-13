@@ -1,3 +1,7 @@
+# Changes from MrBlenny's version in this fork
+- Each Port knows about the parent Node it belongs to, and can use the data from there
+- added isFreeDraggingRestricted boolean option to Canvas to disable the default drag'n'drop behaviour for new nodes
+
 # React Flow Chart
 
 [![CircleCI](https://circleci.com/gh/MrBlenny/react-flow-chart.svg?style=svg)](https://circleci.com/gh/MrBlenny/react-flow-chart)

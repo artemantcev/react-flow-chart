@@ -29,6 +29,7 @@ export const LinkDefault = (props: ILinkDefaultProps) => {
   const linkColor: string =
     (fromPort.properties && fromPort.properties.linkColor) || 'cornflowerblue'
 
+  // @ts-ignore
   const linkProps = {
     config,
     points,

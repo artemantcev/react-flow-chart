@@ -7,7 +7,7 @@ import { ICanvasInnerDefaultProps } from './CanvasInner.default'
 import { ICanvasOuterDefaultProps } from './CanvasOuter.default'
 
 export interface ICanvasWrapperProps {
-  config: IConfig
+  config: IConfig,
   position: {
     x: number
     y: number,
@@ -134,6 +134,10 @@ export class CanvasWrapper extends React.Component<ICanvasWrapperProps, IState> 
                   }
                 }}
                 onDrop={(e) => {
+                  if (config.isFreeDraggingRestricted) {
+                    return
+                  }
+
                   const data = JSON.parse(
                     e.dataTransfer.getData(REACT_FLOW_CHART),
                   )

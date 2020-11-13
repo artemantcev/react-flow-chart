@@ -7,6 +7,7 @@ export interface IConfig {
   snapToGrid?: boolean
   smartRouting?: boolean
   showArrowHead?: boolean
+  isFreeDraggingRestricted?: boolean
   gridSize?: number
   validateLink?: (props: IOnLinkCompleteInput & { chart: IChart }) => boolean
   nodeProps?: any
