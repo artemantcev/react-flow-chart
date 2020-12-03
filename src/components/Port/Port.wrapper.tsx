@@ -62,6 +62,12 @@ export class PortWrapper extends React.Component<IPortWrapperProps> {
     const fromNodeId = node.id
     const fromPortId = port.id
 
+    if (port.properties['restrictOutcomingManualLinks']) {
+      startEvent.preventDefault()
+      startEvent.stopPropagation()
+      return
+    }
+
     // Create the move handler
     // This will update the position as the mouse moves
     const mouseMoveHandler = (e: MouseEvent) => {

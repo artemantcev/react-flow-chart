@@ -7,6 +7,7 @@
   "rules": {
     "semicolon": [true, "never"],
     "object-literal-sort-keys": false,
+    "no-string-literal": false,
     "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
     "jsx-no-lambda": false,
     "jsx-no-multiline-js": false,
