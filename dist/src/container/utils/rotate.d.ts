@@ -1,2 +1,1 @@
-import { IPosition } from '../../../';
-export declare const rotate: (center: IPosition, current: IPosition, angle: number) => IPosition;
+export declare const rotate: (center: any, current: any, angle: number) => any;
