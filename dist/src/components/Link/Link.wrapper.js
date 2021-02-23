@@ -15,6 +15,6 @@ exports.LinkWrapper = React.memo(function (_a) {
     if (!endPos) {
         return null;
     }
-    return (React.createElement(Component, { config: config, link: link, matrix: matrix, startPos: startPos, endPos: endPos, fromPort: fromPort, toPort: toPort, onLinkMouseEnter: config.readonly ? utils_1.noop : onLinkMouseEnter, onLinkMouseLeave: config.readonly ? utils_1.noop : onLinkMouseLeave, onLinkClick: config.readonly && !config.selectable ? utils_1.noop : onLinkClick, isSelected: isSelected, isHovered: isHovered }));
+    return (React.createElement(Component, { config: config, link: link, matrix: matrix, startPos: startPos, endPos: endPos, fromPort: fromPort, toPort: toPort, onLinkMouseEnter: config.readonly && !config.selectable ? utils_1.noop : onLinkMouseEnter, onLinkMouseLeave: config.readonly && !config.selectable ? utils_1.noop : onLinkMouseLeave, onLinkClick: config.readonly && !config.selectable ? utils_1.noop : onLinkClick, isSelected: isSelected, isHovered: isHovered }));
 });
 //# sourceMappingURL=Link.wrapper.js.map
