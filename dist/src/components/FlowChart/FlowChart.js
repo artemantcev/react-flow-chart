@@ -43,7 +43,7 @@ exports.FlowChart = function (props) {
     return (React.createElement(__1.CanvasWrapper, __assign({ config: config, position: chart.offset, scale: chart.scale, ComponentInner: CanvasInner, ComponentOuter: CanvasOuter, onSizeChange: function (width, height) { return setCanvasSize({ width: width, height: height }); } }, canvasCallbacks),
         linksInView.map(function (linkId) {
             var isSelected = !config.readonly && selected.type === 'link' && selected.id === linkId;
-            var isHovered = !config.readonly && hovered.type === 'link' && hovered.id === linkId;
+            var isHovered = hovered.type === 'link' && hovered.id === linkId;
             var fromNodeId = links[linkId].from.nodeId;
             var toNodeId = links[linkId].to.nodeId;
             return (React.createElement(__1.LinkWrapper, __assign({ config: config, key: linkId, link: links[linkId], Component: Link, isSelected: isSelected, isHovered: isHovered, fromNode: nodes[fromNodeId], toNode: toNodeId ? nodes[toNodeId] : undefined, matrix: matrix }, linkCallbacks)));
